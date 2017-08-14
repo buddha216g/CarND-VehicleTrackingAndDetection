@@ -98,7 +98,10 @@ I used YUV 3-channel HOG features plus spatially binned color and histograms of 
 ### Video Implementation
 
 ####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
-Here's a to my video result https://youtu.be/WfdOoMbstT0
+
+Here's a to my video result 
+
+https://youtu.be/WfdOoMbstT0
 
 
 ####2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
@@ -126,7 +129,7 @@ I then used pipleline to run the process on all 6 test images
 
 I practised all the concepts first, especailly drawing boxes manually, using templates etc. I played around with extracting spatial, color histogram and hog features by fintuning various parameters on the test images that were provided.
 
-I then extracted the cars and non cars. However since i had to assing parameters here i had to do lot of iterations on this step to improve my accuracy.
+I then extracted the cars and non cars. However since i had to assign parameters here, i had to do lot of iterations to improve my accuracy.
 Sliding windows was another place i faced lot of difficulty. To correct lot of false positives i had to spend lot of time using the correct sizes, start end positions (x and y) and also overlap.
 
 Applying thresholds was another major problem i faced since increasing the limits was causing issues with finding cars. I solved this by adding more sizes for sliding and optimizing the thresholds so i am atleast able to identify all the cars that are passing by.
